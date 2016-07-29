@@ -6,7 +6,7 @@ import sys
 
 home = os.path.expanduser("~")
 
-def createSSHClient(server, porta=22,user='admin', senha=None, keyfile=home + '/etc/ssh/id_dsa',tempo=10):
+def createSSHClient(server, porta=22,user='admin', senha=None, keyfile=home + '/.ssh/id_dsa',tempo=10):
   client = paramiko.SSHClient()
   client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
   try:
