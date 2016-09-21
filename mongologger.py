@@ -13,7 +13,7 @@ Se o arquivo for comprimido com gzip, implica em --whole."""
     parser = optparse.OptionParser(usage)
 
     parser.add_option('-w','--whole',action="store_true",dest="filepart",default=False,
-        help="Coleta todo o arquivo ao invés de somente a hora anterior.")
+        help="Coleta todo o arquivo exceto a hora anterior.")
 
     options, args = parser.parse_args()
 
